@@ -1,0 +1,36 @@
+# Networking
+vpc_cidr                = "10.0.0.0/16"
+public_subnet_cidr      = "10.0.1.0/24"
+private_db_subnetA_cidr = "10.0.2.0/28"
+private_db_subnetB_cidr = "10.0.3.0/28"
+availability_zones      = ["us-east-2a", "us-east-2b", "us-east-2c"]
+
+# Compute
+
+ami_id          = "ami-0e5497a77ef21b5ac" #"ami-0c55b159c7fa881f1"
+instance_type   = "t2.micro"
+key_name        = "terraform-aws-ansible-key"
+public_key_path = "/home/rubi-cloud/.ssh/ansible.pub"
+
+
+## Database
+
+db_subnet_group_name  = "epicbook-db-subnet-group"
+engine_version        = "8.4.9"
+instance_class        = "db.t3.micro"
+allocated_storage     = 20
+max_allocated_storage = 100
+storage_type          = "gp3"
+db_identifier         = "epicbook-db"
+
+db_name     = "bookstore"
+db_username = "epicadmin"
+db_password = "database123!"
+db_port     = 3306
+#db_host = 
+multi_az                = false
+backup_retention_period = 7
+backup_window           = "03:00-04:00"
+maintenance_window      = "Sun:04:00-Sun:05:00"
+deletion_protection     = false
+skip_final_snapshot     = true

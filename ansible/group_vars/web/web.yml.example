@@ -1,0 +1,16 @@
+---
+# Application
+app_repo: https://github.com/Tobilee10/theepicbook.git
+app_dest: /home/ubuntu/epicbook
+app_user: <REPLACE_WITH_YOUR_SERVER_USER>
+app_port: 8080
+pm2_app_name: epicbook
+
+# Nginx
+server_name: <REPLACE_WITH YOUR_SERVER_IP>
+
+# Managed MySQL database (values from terraform output)
+db_host: <REPLACE_WITH_YOUR_DATABASE_ENDPOINT>
+db_name: bookstore
+db_user: <REPLACE_WITH_YOUR_DATABASE_USERNAME>
+db_password: "{{ vault_db_password }}"

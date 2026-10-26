@@ -1,0 +1,57 @@
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Terraform variable files containing local values or secrets
+terraform.tfvars
+terraform.tfvars.json
+*.auto.tfvars
+*.auto.tfvars.json
+
+# Terraform local state & locks
+**/*.tfstate.backup
+**/*.tfvars
+!**/*.tfvars.example
+**/.terraform.lock.hcl
+
+
+# Ansible
+ansible/*.retry
+*.retry
+
+# Ansible Vault secrets
+ansible/group_vars/web/web.yml
+ansible/group_vars/web/vault.yml
+
+.vault_pass
+.vault-password
+
+# Allow safe example templates
+!ansible/group_vars/web/vault.example.yml
+
+# SSH keys and credentials
+*.pem
+*.key
+id_rsa
+id_ed25519
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Editor and operating system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
