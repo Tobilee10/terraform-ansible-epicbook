@@ -7,25 +7,25 @@ availability_zones      = ["us-east-2a", "us-east-2b", "us-east-2c"]
 
 # Compute
 
-ami_id          = "ami-0e5497a77ef21b5ac" #"ami-0c55b159c7fa881f1"
-instance_type   = "t2.micro"
-key_name        = "terraform-aws-ansible-key"
-public_key_path = "/home/rubi-cloud/.ssh/ansible.pub"
+ami_id          = "REPLACE_ME"
+instance_type   = "REPLACE_ME"
+key_name        = "REPLACE_ME"
+public_key_path = "REPLACE_ME"
 
 
 ## Database
 
-db_subnet_group_name  = "epicbook-db-subnet-group"
-engine_version        = "8.4.9"
-instance_class        = "db.t3.micro"
-allocated_storage     = 20
-max_allocated_storage = 100
-storage_type          = "gp3"
-db_identifier         = "epicbook-db"
+db_subnet_group_name  = "REPLACE_ME"
+engine_version        = "REPLACE_ME"
+instance_class        = "REPLACE_ME"
+allocated_storage     = REPLACE_ME
+max_allocated_storage = REPLACE_ME
+storage_type          = "REPLACE_ME"
+db_identifier         = "REPLACE_ME"
 
 db_name     = "bookstore"
-db_username = "epicadmin"
-db_password = "database123!"
+db_username = "REPLACE_ME"
+db_password = "REPLACE_ME"
 db_port     = 3306
 #db_host = 
 multi_az                = false
