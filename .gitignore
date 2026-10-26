@@ -3,6 +3,8 @@
 *.tfstate
 *.tfstate.*
 *.tfplan
+tfplan
+tfplan.json
 crash.log
 override.tf
 override.tf.json
@@ -14,7 +16,6 @@ terraform.tfvars
 terraform.tfvars.json
 *.auto.tfvars
 *.auto.tfvars.json
-
 # Terraform local state & locks
 **/*.tfstate.backup
 **/*.tfvars
