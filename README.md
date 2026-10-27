@@ -54,7 +54,7 @@ Terraform manages the complete infrastructure lifecycle, while Ansible configure
 
 ![EpicBook Two-Tier AWS Architecture](docs/images/architecture.png)
 
-> **Note**: Ensure this diagram represents the active resources and network routing paths deployed in your AWS environment.
+
 
 ---
 
